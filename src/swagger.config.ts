@@ -15,7 +15,7 @@ const swaggerOptions = {
         }
     ],
 
-    apis:['src/index.ts', '../swagger/*.swagger.ts']
+    apis:['src/index.ts', './swagger/*.swagger.ts']
 }
 
 export const swaggerSpec = swaggerJSDoc(swaggerOptions)

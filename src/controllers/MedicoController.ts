@@ -35,6 +35,11 @@ class MedicoController{
             res.json({ error: e.message });
             }
         }
+
+        async ListarMedico(req:Request, res:Response){
+            const medicos = await this.prisma.medico.findMany()
+            res.json(medicos)
+        }
     }
 
 
