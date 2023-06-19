@@ -2,12 +2,12 @@ export default {
 	/**
      * @swagger
      * 
-     * /listar_medicos:
+     * /listar_citas:
      *  get:
-     *      summary: Muestra los medicos guardados en la DB
+     *      summary: Muestra las citas guardadas en la DB
      *      responses: 
      *          200:
-     *              description: Has obtenido los medicos guardados 
+     *              description: Has obtenido las citas guardados 
      *              type: Object
      *              content:
      *              text/plane:
@@ -18,12 +18,12 @@ export default {
      /**
      * @swagger
      * 
-     *  /crear_medicos:
+     *  /crear_cita:
      *  post:
-     *      summary: Inserta un nuevo medico en la DB
+     *      summary: Inserta una nueva cita en la DB
      *      responses: 
      *          200:
-     *              description: Has creado un medico
+     *              description: Has creado una cita
      *              type: Object
      *              content:
      *              text/plane:  

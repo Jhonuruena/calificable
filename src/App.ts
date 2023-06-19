@@ -4,6 +4,9 @@ import swaggerUi from "swagger-ui-express"
 import { swaggerSpec } from "./swagger.config"; 
 
 import MedicoRouter from "./routes/Medico.routes";
+import PacienteRouter from "./routes/Paciente.routes"
+import FormularioRouter from "./routes/Formulario.routes";
+import CitaRouter from "./routes/Cita.routes";
 
 
 
@@ -28,7 +31,7 @@ class App{
 
     //Metodo para inicializar servidor
     public start():void{
-        this.server = this.app.listen(3000,()=>{
+        this.server = this.app.listen(4000,()=>{
             console.log("El servidor esta escuchando en el puerto 3000")
         })
     }
@@ -40,6 +43,9 @@ class App{
 
     private routes():void{
         this.app.use('/', MedicoRouter)
+        this.app.use('/', PacienteRouter)
+        this.app.use('/', FormularioRouter)
+        this.app.use('/', CitaRouter)
     }
 
 }

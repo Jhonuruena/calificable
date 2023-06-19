@@ -2,12 +2,12 @@ export default {
 	/**
      * @swagger
      * 
-     * /listar_medicos:
+     * /listar_pacientes:
      *  get:
-     *      summary: Muestra los medicos guardados en la DB
+     *      summary: Muestra los pacientes guardados en la DB
      *      responses: 
      *          200:
-     *              description: Has obtenido los medicos guardados 
+     *              description: Has obtenido los pacientes guardados 
      *              type: Object
      *              content:
      *              text/plane:
@@ -18,12 +18,12 @@ export default {
      /**
      * @swagger
      * 
-     *  /crear_medicos:
+     *  /crear_paciente:
      *  post:
-     *      summary: Inserta un nuevo medico en la DB
+     *      summary: Inserta un nuevo paciente en la DB
      *      responses: 
      *          200:
-     *              description: Has creado un medico
+     *              description: Has creado un paciente
      *              type: Object
      *              content:
      *              text/plane:  

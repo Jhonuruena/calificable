@@ -1,5 +1,5 @@
 import  request  from "supertest";
-import App from '../src/App'
+import App from './App'
 
 describe(
     'GET /',
@@ -18,7 +18,7 @@ describe(
         test(
             'Estatus ok',
             async ()=>{
-                const res = await request(app.app).get('/listar_medicos') 
+                const res = await request(app.app).get('/') 
                 expect(res.statusCode).toEqual(200);
             }
         )

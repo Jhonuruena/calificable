@@ -19,6 +19,10 @@ class MedicoRouter {
     this.router.get("/listar_medicos", (req: Request, res: Response) => {
       this.medicoController.ListarMedico(req, res);
     });
+
+    this.router.get("/listar_medicoss", (req: Request, res: Response) => {
+      this.medicoController.ListarMedico(req, res);
+    });
   }
 }
 
