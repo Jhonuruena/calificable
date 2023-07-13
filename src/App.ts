@@ -31,7 +31,7 @@ class App{
 
     //Metodo para inicializar servidor
     public start():void{
-        this.server = this.app.listen(4000,()=>{
+        this.server = this.app.listen(3000,()=>{
             console.log("El servidor esta escuchando en el puerto 3000")
         })
     }
